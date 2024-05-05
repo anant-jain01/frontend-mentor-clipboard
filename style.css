@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+:root{
+    --clr-ios:hsl(171, 66%, 44%);
+    --clr-mac:hsl(233, 100%, 69%);
+    --clr-text-primary:hsl(210, 10%, 33%);
+    --clr-text-secondary:hsl(201, 11%, 66%);
+    --clr-footer:#F5F6F8;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+body{
+    background-color: #FFFFFF;
+}
+header{
+    background: url(images/bg-header-desktop.png);
+    height: 300px;
+}
+.company-logo{
+    position: relative;
+    top: 129px;
+    left: 650px;
+    margin: auto;
+}
+.heading{
+    color: var(--clr-text-primary);
+    font-weight: 600;
+    text-align: center;
+}
+.subheading{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--clr-text-secondary);
+    text-align: center;
+}
+.main{
+    font-size: 35px;
+    width: 687px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+.main-subhead{
+    font-size: 15px;
+    transform: scaleX(1.05);
+    padding-left: 410px;
+    padding-bottom: 50px;
+    width: 550px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.ios,.mac{
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+.ios:hover,.mac:hover{
+    opacity: 0.8;
+}
+.button-top{
+    margin-bottom: 160px;
+}
+button{
+    height: 53px;
+    width: 227px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #FFFFFF;
+    border: none;
+}
+.ios{
+    background-color: var(--clr-ios);
+}
+.mac{
+    margin-left: 15px;
+    background-color: var(--clr-mac);
+}
+.tracking,.clipboard{
+    font-size: 25px;
+}
+.tracking-subhead,.clipboard-subhead{
+    font-size: 15px;
+}
+.tracking-subhead{
+    width: 575px;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 84px;
+}
+.computer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 160px;
+}
+.computer>ul{
+    margin-left: 110px;
+    list-style: none;
+}
+.nav{
+    font-size: 18px;
+    margin-bottom: 24px;
+    text-align: left;
+}
+.nav-subhead{
+    text-align: left;
+    font-size: 15px;
+    width: 325px;
+    margin-bottom: 70px;
+}
+.clipboard{
+    margin-bottom: 35px;
+    height: 30px;
+}
+.clipboard-subhead{
+    width: 580px;
+    margin: auto;
+    margin-bottom: 115px;
+}
+.devices{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 175px;
+}
+.supercharge{
+    font-size: 27px;
+    margin-bottom: 28px;
+}
+.supercharge-subhead{
+    font-size: 15px;
+    margin-bottom: 80px;
+}
+.features{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 170px;
+}
+.items{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blacklist-image{
+    height: 32px;
+}
+.items>.heading{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.items>.subheading{
+    width: 400px;
+}
+.companies{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 170px;
+}
+.companies>img{
+    height: 40px;
+}
+.last{
+    margin: auto;
+    width: 500px;
+    font-size: 30px;
+}
+.last-subhead{
+    width: 700px;
+    margin: 30px auto 50px auto;
+}
+footer{
+    background-color: var(--clr-footer);
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+}
+.logo{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+.more{
+    flex: 3;
+    display: grid;
+    grid-template-areas: "faq ppv guide"
+    "contact kit none";
+    align-items: center;
+}
+.faq{
+    grid-area: faq;
+    vertical-align: bottom;
+}
+.ppv{
+    grid-area:ppv;
+}
+.guide{
+    grid-area: guide;
+    align-items: baseline;
+}
+.contact{
+    grid-area: contact;
+}
+.kit{
+    grid-area: kit;
+}
+.more>div{
+    cursor: pointer;
+}
+.socials{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.socials>img{
+    height: 25px;
+}
+.comapny-logo-footer{
+    height: 55px;
+}
+.button-low{
+    margin-bottom: 150px;
+}
+.faq:hover,.ppv:hover,.guide:hover,.contact:hover,.kit:hover{
+    color: var(--clr-ios);
+}
+.facebook,.twitter,.instagram{
+    cursor: pointer;
+}
+.twitter:hover path{
+    fill: #1DA1F2;
+}
+@media(max-width:425px){
+    header{
+        background: url(images/bg-header-mobile.png);
+    }
+    .company-logo{
+        top: 143px;
+        left: 125px;
+        margin-bottom: 60px;
+    }
+
+    .heading{
+        padding-bottom: 20px;
+        font-size: 30px;
+        width: 300px;
+    }
+    .subheading{
+        width: 290px;
+    }
+    .main-subhead{
+        width: 290px;
+        padding-bottom: 40px;
+        margin: auto;
+        padding-left: 0px;
+    }
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mac{
+        margin: 20px auto 130px auto;
+    }
+    .tracking{
+        margin-left: 55px;
+    }
+    .mac-computer{
+        padding: 0 25px 50px 25px;
+        width: 325px;
+    }
+    .computer{
+        flex-direction: column;
+        padding-bottom: 150px;
+    }
+    .nav{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .nav-subhead{
+        text-align: center;
+    }
+    .computer>ul{
+        margin: 0;
+    }
+    .clipboard{
+        padding-left: 37.5px;
+    }
+    .clipboard-subhead{
+        margin-bottom: 55px;
+    }
+    .devices{
+        height: 250px;
+        margin-bottom: 100px;
+    }
+    .supercharge{
+        padding-left: 37.5px;
+    }
+    .supercharge-subhead{
+        padding-left: 37.5px;
+        margin-bottom: 70px;
+    }
+    .features{
+        flex-direction: column;
+        margin-bottom: 105px;
+    }
+    .features .subheading{
+        margin-bottom: 50px;
+        width: 350px;
+    }
+    .companies{
+        flex-direction: column;
+        padding-left: 92px;
+        width: 190px;
+        margin-bottom: 140px;
+    }
+    .companies img{
+        margin-bottom: 50px;
+    }
+    .last{
+        width: 325px;
+    }
+    .last-subhead{
+        margin: 0;
+        margin-bottom: 38px;
+        margin-left: 40px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .comapny-logo-footer{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .more{
+        display: flex;
+        flex-direction: column;
+    }
+    .more div{
+        margin-bottom: 30px;
+    }
+    .socials{
+        justify-content: space-around;
+        padding-bottom: 40px;
+    }
+}
